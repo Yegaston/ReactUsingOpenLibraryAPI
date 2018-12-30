@@ -1,8 +1,10 @@
-import React, {Component} from 'React';
+import React, {Component} from 'react';
 
 class Heading extends Component{
     render(){
-        return <th>this.props.heading</th>
+        return <th>{this.props.heading}</th>
     }
 }
 export default Heading;
+
+

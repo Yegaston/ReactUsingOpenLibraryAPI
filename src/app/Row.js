@@ -1,12 +1,16 @@
-import React, {Component} from 'React';
+import React,  {Component } from 'react';
 
 class Row extends Component{
     render(){
-        return(
+        return (
             <tr>
                 <td>
                     {this.props.change.when}
-                    {this.props.change.who}
+                </td>
+                <td>
+                    {this.props.change.who} 
+                </td>
+                <td>
                     {this.props.change.description}
                 </td>
             </tr>

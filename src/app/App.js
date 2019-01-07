@@ -50,6 +50,7 @@ class App extends Component {
             const res = await fetch('https://openlibrary.org/recentchanges.json?limit=10');
 
             const data = await res.json();
+            console.log(data);
             const formatData = this.formatData(data);
             this.setState({ data: formatData });
             console.log(formatData);
